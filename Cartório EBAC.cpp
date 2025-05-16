@@ -128,6 +128,7 @@ int main()
 		printf("\t1 - Registro de nomes\n");
 		printf("\t2 - Consulta de nomes\n");
 		printf("\t3 - Exclusão de nomes\n\n");	
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");
 		
 		scanf("%d", &opcao); //armazena na variavel opcao, o valor que o usuario digitar
@@ -146,6 +147,11 @@ int main()
 			
 			case 3:
 			excluir();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema");
+			return 0;
 			break;
 				
 			default:
